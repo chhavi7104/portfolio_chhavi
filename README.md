@@ -8,7 +8,7 @@ A passionate Computer Science Engineering student at VIT Bhopal University with 
 - 📱 **Phone:** +91-8950456601
 - 💼 **LinkedIn:** www.linkedin.com/in/chhavi-sharma-8b7b3a24b
 - 💻 **GitHub:** https://github.com/chhavi7104
-- 🏆 **LeetCode:** (3-star, 600+ problems)
+- 🏆 **LeetCode:** https://leetcode.com/u/chhavi7104 (3-star, 600+ problems)
 
 ## 🛠️ Technical Skills
 
