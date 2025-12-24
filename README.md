@@ -1,5 +1,4 @@
 # 👋 Hi, I'm Chhavi!
-
 A passionate Computer Science Engineering student at VIT Bhopal University with strong expertise in full-stack development and AI/ML technologies. I love building innovative solutions that solve real-world problems.
 
 ## 🚀 Quick Glance
