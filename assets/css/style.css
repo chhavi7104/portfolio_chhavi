@@ -241,7 +241,7 @@ html {
 }
 
 .dark-theme .blog-topic:hover {
-  background: var(--foreground-primary);
+  background: var(--foreground-secondary);
   color: var(--action-primary);
 }
 
@@ -483,7 +483,7 @@ header .btn-group {
 }
 
 .blog-topic:hover {
-  background: var(--foreground-secondary);
+  background: hsl(235, 86%, 65%);
   color: var(--action-secondary);
 }
 
@@ -1042,7 +1042,7 @@ footer .wrapper {
   }
 
   .tags .hashtag:hover {
-    background: var(--foreground-secondary);
+    background: hsl(235, 86%, 65%);
     color: var(--action-primary);
   }
 
@@ -1139,4 +1139,419 @@ footer .wrapper {
   .footer-link {
     margin-bottom: 0.3rem;
   }
+}
+.skills-section {
+  width: 400px;
+  font-family: Arial, sans-serif;
+}
+
+.skills-section h2 {
+  margin-bottom: 20px;
+}
+
+.skill {
+  margin-bottom: 15px;
+}
+
+.skill-name {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.skill-bar {
+  background: #e0e0e0;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 18px;
+}
+
+.skill-fill {
+  height: 100%;
+  border-radius: 20px;
+  animation: fillBar 1.5s ease-in-out forwards;
+}
+
+/* Skill Levels (change % as needed) */
+.cpp {
+  width: 80%;
+  background-color: #00599C;
+}
+
+.csharp {
+  width: 70%;
+  background-color: #68217A;
+}
+
+.python {
+  width: 85%;
+  background-color: #3572A5;
+}
+
+.java {
+  width: 75%;
+  background-color: #f89820;
+}
+
+/* Animation */
+@keyframes fillBar {
+  from {
+    width: 0;
+  }
+}
+.education {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.education h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+
+.edu-timeline {
+  position: relative;
+  padding-left: 30px;
+}
+
+.edu-timeline::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(to bottom, #3572A5, #6dd5ed);
+  border-radius: 5px;
+}
+
+.edu-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.edu-dot {
+  position: absolute;
+  left: 2px;
+  top: 25px;
+  width: 18px;
+  height: 18px;
+  background: hsl(235, 86%, 65%);
+  border-radius: 50%;
+  box-shadow: 0 0 0 6px rgba(53,114,165,0.2);
+}
+
+.edu-card {
+  margin-left: 40px;
+  padding: 25px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  transition: 0.4s ease;
+}
+
+.edu-card ion-icon {
+  font-size: 38px;
+  color: hsl(235, 86%, 65%);
+  margin-bottom: 10px;
+}
+
+.edu-card h3 {
+  margin-bottom: 6px;
+}
+
+.edu-card p {
+  font-weight: 600;
+}
+
+.edu-card span {
+  display: block;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.edu-card small {
+  color: #444;
+}
+
+.edu-card:hover {
+  transform: translateY(-8px) scale(1.02);
+}
+@media (min-width: 768px) {
+  .edu-card {
+    padding: 30px;
+  }
+}
+.certificates {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.certificates h2 {
+  margin-bottom: 30px;
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.cert-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.cert-card ion-icon {
+  font-size: 40px;
+  color:hsl(235, 86%, 65%);
+  margin-bottom: 15px;
+}
+
+.cert-card h3 {
+  margin-bottom: 5px;
+}
+
+.cert-card p {
+  font-weight: 600;
+}
+
+.cert-card span {
+  display: block;
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.cert-card a {
+  text-decoration: none;
+  color:hsl(235, 86%, 65%);
+  font-weight: 600;
+}
+
+.cert-card:hover {
+  transform: translateY(-6px);
+}
+@media (min-width: 600px) {
+  .cert-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+/* ==============================
+   DARK THEME — CERTIFICATES
+   ==============================
+
+.dark-theme .certificates {
+  background-color: #0f172a; 
+  color: #e5e7eb;
+  padding: 60px 20px;
+}
+*/
+/* Section heading */
+.dark-theme .certificates h2 {
+  color: #f8fafc;
+}
+
+/* Grid container */
+.dark-theme .cert-grid {
+  display: grid;
+  gap: 24px;
+}
+
+/* Certificate card */
+.dark-theme .cert-card {
+  background: rgba(30, 41, 59, 0.75);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+  padding: 28px;
+  text-align: center;
+  transition: 0.35s ease;
+}
+
+/* Icon */
+.dark-theme .cert-card ion-icon {
+  font-size: 42px;
+  color: #38bdf8;
+  margin-bottom: 12px;
+}
+
+/* Category title */
+.dark-theme .cert-card h3 {
+  color: #f1f5f9;
+  margin-bottom: 6px;
+}
+
+/* Certificate name */
+.dark-theme .cert-card p {
+  color: #e2e8f0;
+  font-weight: 600;
+}
+
+/* Issuer / position */
+.dark-theme .cert-card span {
+  display: block;
+  color: #94a3b8;
+  font-size: 14px;
+  margin: 6px 0 14px;
+}
+
+/* Certificate link */
+.dark-theme .cert-card a {
+  color: #38bdf8;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: 0.3s ease;
+}
+
+.dark-theme .cert-card a:hover {
+  border-bottom: 1px solid #38bdf8;
+}
+
+/* Hover animation */
+.dark-theme .cert-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 30px 60px rgba(56, 189, 248, 0.25);
+}
+/* ==============================
+   DARK THEME — PROGRAMMING SKILLS
+   ============================== */
+
+.dark-theme .skills-section {
+  background-color: #0f172a;
+  padding: 40px 25px;
+  border-radius: 18px;
+}
+
+/* Heading */
+.dark-theme .skills-section h2 {
+  color: #f8fafc;
+  margin-bottom: 25px;
+}
+
+/* Skill label */
+.dark-theme .skill-name {
+  color: #e5e7eb;
+  font-weight: 600;
+}
+
+/* Skill bar background */
+.dark-theme .skill-bar {
+  background: rgba(148, 163, 184, 0.25);
+  height: 18px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Skill fill base */
+.dark-theme .skill-fill {
+  height: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.6);
+}
+
+/* Individual language colors */
+.dark-theme .skill-fill.cpp {
+  background: linear-gradient(90deg, #38bdf8, #0ea5e9);
+}
+
+.dark-theme .skill-fill.csharp {
+  background: linear-gradient(90deg, #a855f7, #7c3aed);
+}
+
+.dark-theme .skill-fill.python {
+  background: linear-gradient(90deg, #facc15, #eab308);
+}
+
+.dark-theme .skill-fill.java {
+  background: linear-gradient(90deg, #fb7185, #e11d48);
+}
+
+/* Hover glow */
+.dark-theme .skill:hover .skill-fill {
+  filter: brightness(1.15);
+}
+/* ==============================
+   DARK THEME — EDUCATION
+   ============================== */
+
+.dark-theme .education {
+  background-color: #0f172a;
+  color: #e5e7eb;
+  padding: 60px 20px;
+}
+
+/* Heading */
+.dark-theme .education h2 {
+  color: #f8fafc;
+}
+
+/* Timeline */
+.dark-theme .edu-timeline {
+  position: relative;
+}
+
+/* Timeline line */
+.dark-theme .edu-timeline::before {
+  background: linear-gradient(to bottom, #38bdf8, #6366f1);
+}
+
+/* Timeline dot */
+.dark-theme .edu-dot {
+  background: #38bdf8;
+  box-shadow: 0 0 0 6px rgba(56, 189, 248, 0.25);
+}
+
+/* Card */
+.dark-theme .edu-card {
+  background: rgba(30, 41, 59, 0.75);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+  padding: 25px;
+  transition: 0.35s ease;
+}
+
+/* Icon */
+.dark-theme .edu-card ion-icon {
+  color: #38bdf8;
+}
+
+/* Text */
+.dark-theme .edu-card h3 { color: #f1f5f9; }
+.dark-theme .edu-card p  { color: #e2e8f0; }
+.dark-theme .edu-card span { color: #94a3b8; }
+.dark-theme .edu-card small { color: #cbd5f5; }
+
+/* Hover */
+.dark-theme .edu-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 30px 60px rgba(56, 189, 248, 0.25);
+}
+.dark-theme .hashtag {
+  background: rgba(30, 41, 59, 0.8);
+  color: #e5e7eb;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: default;
+  transition: 0.3s ease;
+}
+
+/* Hover effect */
+.dark-theme .hashtag:hover {
+  background: linear-gradient(135deg, #38bdf8, #6366f1);
+  color: #020617;
+  box-shadow: 0 6px 15px rgba(56, 189, 248, 0.35);
 }
