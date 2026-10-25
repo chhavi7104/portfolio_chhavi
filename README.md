@@ -5,7 +5,7 @@ A passionate Computer Science Engineering student at VIT Bhopal University with 
  
 ## 🚀 Quick Glance
 
-- 📧 **Email:** imchhavigaur@gmail.com
+- 📧 **Email:** chhavi7104@gmail.com
 - 📱 **Phone:** +91-8950456601
 - 💼 **LinkedIn:** www.linkedin.com/in/chhavi-sharma-8b7b3a24b
 - 💻 **GitHub:** https://github.com/chhavi7104
