@@ -1,600 +1,143 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="noindex" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="" />
-  <title>Chhavi </title>
-
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon" />
-
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css" />
-
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet" />
-</head>
-
-<body class="light-theme">
-
-  <!-- Start scroll-up-button -->
-  <div class="scroll-up-btn" onclick="scrollToTop()">
-    <img src="./assets/images/scroll-top-img.png" alt="scroll top icon" />
-  </div>
-  <!-- End scroll-up-button -->
-
-  <!--
-    - #HEADER
-  -->
-
-  <header>
-
-    <div class="container">
-
-      <nav class="navbar">
-
-        <a href="#">
-          <img src="./assets/images/logo.png" alt="Devblog's logo" class="logo-light" />
-          <img src="./assets/images/logo.png" alt="Devblog's logo" class="logo-dark" />
-        </a>
-
-        <div class="btn-group">
-          <button class="theme-btn theme-btn-mobile light">
-            <ion-icon name="moon" class="moon"></ion-icon>
-            <ion-icon name="sunny" class="sun"></ion-icon>
-          </button>
-
-          <button class="nav-menu-btn">
-            <ion-icon name="menu-outline"></ion-icon>
-          </button>
-        </div>
-
-        <div class="flex-wrapper">
-          <ul class="desktop-nav">
-            <li>
-              <a href="#" class="nav-link">Home</a>
-            </li>
-
-            <li>
-              <a href="" target="_blank"
-                class="nav-link">About Me</a>
-            </li>
-
-            <li>
-              <a href="" target="_blank"
-                class="nav-link">Contact</a>
-            </li>
-          </ul>
-
-          <button class="theme-btn theme-btn-desktop light">
-            <ion-icon name="moon" class="moon"></ion-icon>
-            <ion-icon name="sunny" class="sun"></ion-icon>
-          </button>
-        </div>
-
-        <div class="mobile-nav">
-          <button class="nav-close-btn">
-            <ion-icon name="close-outline"></ion-icon>
-          </button>
-
-          <div class="wrapper">
-            <p class="h3 nav-title">Main Menu</p>
-
-            <ul>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Home</a>
-              </li>
-
-              <li class="nav-item">
-                <a href="https://www.linkedin.com/in/chhavi-sharma-8b7b3a24b/" target="_blank"
-                  class="nav-link">About Me</a>
-              </li>
-
-              <li class="nav-item">
-                <a href="https://www.linkedin.com/in/chhavi-sharma-8b7b3a24b/" target="_blank"
-                  class="nav-link">Contact</a>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <p class="h3 nav-title">Topics</p>
-
-            <ul>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Software Development</a>
-              </li>
-
-              <li class="nav-item">
-                <a href="#" class="nav-link">Database</a>
-              </li>
-
-              <li class="nav-item">
-                <a href="#" class="nav-link">Web Performance</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-      </nav>
-    </div>
-  </header>
-
-  <main>
-
-    <!--
-      - #HERO SECTION
-    -->
-
-    <div class="hero">
-      <div class="container">
-
-        <div class="left">
-          <h1 class="h1">
-            Hi, I'm <b>Chhavi Sharma</b> <br />Web Developer
-          </h1>
-
-          <p class="h3">Specialized in Web Development.</p>
-
-          <div class="btn-group">
-            <a href="https://www.linkedin.com/in/chhavi-sharma-8b7b3a24b/" target="_blank"
-              class="btn btn-primary">Contact Me
-              <ion-icon name="call"></ion-icon>
-            </a>
-            <a href="https://drive.google.com/file/d/1AoHSvApf0An8rw7rupmZEM9yAR4hGggv/view?usp=sharing" target="_blank"
-              class="btn btn-secondary">Download CV
-              <ion-icon name="cloud-download-sharp"></ion-icon>
-            </a>
-          </div>
-        </div>
-
-        <div class="right">
-          <div class="pattern-bg"></div>
-          <div class="img-box">
-            <img src="./assets/images/hero1.png" alt="Julia Walker" class="hero-img" />
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="main">
-      <div class="container">
-
-        <!--
-          - BLOG SECTION
-        -->
-
-        <div class="blog">
-          <section class="education">
-  <h2 class="h2">Education</h2>
-
-  <div class="edu-timeline">
-
-    <div class="edu-item">
-      <div class="edu-dot"></div>
-      <div class="edu-card">
-        <ion-icon name="school-outline"></ion-icon>
-        <h3>B.Tech in Computer Science & Engineering</h3>
-        <p>VIT Bhopal University</p>
-        <span>2022 – 2026 · Currently Pursuing</span>
-        <small>CGPA: 8.56 / 10 · DSA · DBMS · OS · CN · OOP</small>
-      </div>
-    </div>
-
-    <div class="edu-item">
-      <div class="edu-dot"></div>
-      <div class="edu-card">
-        <ion-icon name="book-outline"></ion-icon>
-        <h3>Senior Secondary (Class XII)</h3>
-        <p>CBSE Board</p>
-        <span>2021 – 2022</span>
-        <small>Percentage: 92.2% · PCM + Computer Science</small>
-      </div>
-    </div>
-
-    <div class="edu-item">
-      <div class="edu-dot"></div>
-      <div class="edu-card">
-        <ion-icon name="reader-outline"></ion-icon>
-        <h3>Secondary (Class X)</h3>
-        <p>CBSE Board</p>
-        <span>2019 – 2020</span>
-        <small>Percentage: 86.2% ·Science & Mathematics</small>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-          <!-- Latest Projects -->
-
-          <h2 class="h2">Latest Projects</h2>
-
-      
-
-<div class="blog-card-group">
-
-  <!-- Portfolio -->
-  <div class="blog-card">
-    <div class="blog-content-wrapper">
-      <button class="blog-topic text-tiny">Portfolio</button>
-      <h3>
-        <a href="https://github.com/chhavi7104/portfolio_chhavi" target="_blank" class="h3">
-          Portfolio Website
-        </a>
-      </h3>
-      <p class="blog-text">
-        Personal portfolio website built using HTML, CSS, and JavaScript.
-      </p>
-    </div>
-  </div>
-
-  <!-- Multiverse -->
-  <div class="blog-card">
-    <div class="blog-content-wrapper">
-      <button class="blog-topic text-tiny">Web App</button>
-      <h3>
-        <a href="https://github.com/chhavi7104/multiverse" target="_blank" class="h3">
-          Multiverse
-        </a>
-      </h3>
-      <p class="blog-text">
-        Interactive JavaScript-based web application with modern UI.
-      </p>
-    </div>
-  </div>
-
-  <!-- AshiyanaHub -->
-  <div class="blog-card">
-    <div class="blog-content-wrapper">
-      <button class="blog-topic text-tiny">Web Platform</button>
-      <h3>
-        <a href="https://github.com/chhavi7104/ashiyanahub" target="_blank" class="h3">
-          AshiyanaHub
-        </a>
-      </h3>
-      <p class="blog-text">
-        Real estate web platform built using JavaScript.
-      </p>
-    </div>
-  </div>
-
-  <!-- Disease Prediction -->
-  <div class="blog-card">
-    <div class="blog-content-wrapper">
-      <button class="blog-topic text-tiny">Machine Learning</button>
-      <h3>
-        <a href="https://github.com/chhavi7104/disease-prediction-app" target="_blank" class="h3">
-          Disease Prediction App
-        </a>
-      </h3>
-      <p class="blog-text">
-        Machine learning based disease prediction system using Python.
-      </p>
-    </div>
-  </div>
-
-  <!-- Short URL -->
-  <div class="blog-card">
-    <div class="blog-content-wrapper">
-      <button class="blog-topic text-tiny">Utility</button>
-      <h3>
-        <a href="https://github.com/chhavi7104/Short_url" target="_blank" class="h3">
-          Short URL Generator
-        </a>
-      </h3>
-      <p class="blog-text">
-        URL shortener built with JavaScript.
-      </p>
-    </div>
-  </div>
-
-  <!-- BMI -->
-  <div class="blog-card">
-    <div class="blog-content-wrapper">
-      <button class="blog-topic text-tiny">Health</button>
-      <h3>
-        <a href="https://github.com/chhavi7104/bmi" target="_blank" class="h3">
-          BMI Calculator
-        </a>
-      </h3>
-      <p class="blog-text">
-        Simple BMI calculator using JavaScript.
-      </p>
-    </div>
-  </div>
-
-  <!-- PDFsage -->
-  <div class="blog-card">
-    <div class="blog-content-wrapper">
-      <button class="blog-topic text-tiny">Python Tool</button>
-      <h3>
-        <a href="https://github.com/chhavi7104/PDFsage" target="_blank" class="h3">
-          PDFsage
-        </a>
-      </h3>
-      <p class="blog-text">
-        PDF reader and question-answering web app built with Python.
-      </p>
-    </div>
-  </div>
-
-  <!-- DevOps -->
-  <div class="blog-card">
-    <div class="blog-content-wrapper">
-      <button class="blog-topic text-tiny">DevOps</button>
-      <h3>
-        <a href="https://github.com/chhavi7104/devops_project" target="_blank" class="h3">
-          DevOps Project
-        </a>
-      </h3>
-      <p class="blog-text">
-        DevOps workflows and CI/CD experimentation project.
-      </p>
-    </div>
-  </div>
-
-</div>
-
-
-         <a href="https://github.com/chhavi7104?tab=repositories"
-   target="_blank"
-   class="btn load-more">
-   View All Projects on GitHub
-</a>
-        </div>  
-        <!--
-          - ASIDE
-        -->
-
-        <div class="aside">
-          <div class="topics">
-            <h2 class="h2">Topics</h2>
-
-            <a href="#" class="topic-btn">
-              <div class="icon-box">
-                <ion-icon name="code-slash-sharp"></ion-icon>
-              </div>
-
-              <p>Software Development</p>
-            </a>
-
-            <a href="#" class="topic-btn">
-              <div class="icon-box">
-                <ion-icon name="server-outline"></ion-icon>
-              </div>
-
-              <p>Database</p>
-            </a>
-
-            <a href="#" class="topic-btn">
-              <div class="icon-box">
-                <ion-icon name="rocket-outline"></ion-icon>
-              </div>
-
-              <p>Web Performance</p>
-            </a>
-          </div>
-
-          <div class="tags">
-            <h2 class="h2">My Skills</h2>
-
-            <div class="wrapper">
-              <button class="hashtag">#HTML</button>
-              <button class="hashtag">#CSS</button>
-              <button class="hashtag">#JavaScript</button>
-              <button class="hashtag">#Three.js</button>
-              <button class="hashtag">#Bootstrap</button>
-              <button class="hashtag">#Python</button>
-              <button class="hashtag">#Flask</button>
-              <button class="hashtag">#Django</button>
-              <button class="hashtag">#MYSQL</button>
-              <button class="hashtag">#MongoDB</button>
-              <button class="hashtag">#Express.js</button>
-              <button class="hashtag">#React.js</button>
-              <button class="hashtag">#Node.js</button>
-              <button class="hashtag">#MYSQL</button>
-            </div>
-          </div>
-
-          <div class="contact">
-            <h2 class="h2">Let's Talk</h2>
-
-            <div class="wrapper">
-              <p>
-                Do you want to learn more about how I can help your company
-                overcome problems? Let us have a conversation.
-              </p>
-
-              <ul class="social-link">
-                <li>
-                  <a href="https://github.com/chhavi7104" target="_blank"
-                    class="icon-box discord">
-                    <ion-icon name="logo-github"></ion-icon>
-                  </a>
-                </li>
-
-                <li>
-  <a href="mailto:chhavi7104@gmail.com" class="icon-box mail">
-    <ion-icon name="mail-outline"></ion-icon>
-  </a>
-</li>
-
-                <li>
-                  <a href="https://www.linkedin.com/in/chhavi-sharma-8b7b3a24b/" class="icon-box linkedin"
-                    target="_blank">
-                    <ion-icon name="logo-linkedin"></ion-icon>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-         <div class="skills-section">
-  <h2>Programming Skills</h2>
-
-  <div class="skill">
-    <span class="skill-name">C++</span>
-    <div class="skill-bar">
-      <div class="skill-fill cpp"></div>
-    </div>
-  </div>
-
-  <div class="skill">
-    <span class="skill-name">C#</span>
-    <div class="skill-bar">
-      <div class="skill-fill csharp"></div>
-    </div>
-  </div>
-
-  <div class="skill">
-    <span class="skill-name">Python</span>
-    <div class="skill-bar">
-      <div class="skill-fill python"></div>
-    </div>
-  </div>
-
-  <div class="skill">
-    <span class="skill-name">Java</span>
-    <div class="skill-bar">
-      <div class="skill-fill java"></div>
-    </div>
-  </div>
-</div>
-<section class="certificates">
-  <h2>Certificates & Achievements</h2>
-
-  <div class="cert-grid">
-
-    <!-- Hackathon -->
-    <div class="cert-card">
-      <ion-icon name="trophy-outline"></ion-icon>
-      <h3>Hackathon</h3>
-      <p>Smart India Hackathon 2024</p>
-      <span>Finalist / Participant</span>
-      <a href="assets/images/hackathon.pdf" target="_blank">View Certificate</a>
-    </div>
-
-    <!-- Course -->
-    <div class="cert-card">
-      <ion-icon name="school-outline"></ion-icon>
-      <h3>Courses</h3>
-      <p>Gen-AI and BlockChain</p>
-      <span>Coursera</span>
-      <a href="assets/images/courses.pdf" target="_blank">View Certificate</a>
-    </div>
-
-    <!-- Internship -->
-    <div class="cert-card">
-      <ion-icon name="briefcase-outline"></ion-icon>
-      <h3>Internship</h3>
-      <p>Software Development Intern</p>
-      <span>ABC Tech Pvt Ltd</span>
-      <a href="assets/images/internship-certificate.pdf" target="_blank">View Certificate</a>
-    </div>
-
-    <!-- Workshop -->
-      <div class="cert-card">
-      <ion-icon name="briefcase-outline"></ion-icon>
-      <h3>Co-curricular</h3>
-      <p>Cultural Team Lead</p>
-      <span>Rajasthani Club</span>
-      <a href="assets/images/club certificate.pdf" target="_blank">View Certificate</a>
-    </div>
-
-  </div>
-</section>
-
-
-        </div>
-
-      </div>
-    </div>
-
-  </main>
-
-
-  <!--
-    - #FOOTER
-  -->
-
-  <footer>
-    <div class="container">
-
-      <div class="wrapper">
-        <a href="#" class="footer-logo">
-          <img src="./assets/images/logo.png" alt="DevBlog's Logo" class="logo-light" />
-          <img src="./assets/images/logo.png" alt="DevBlog's Logo" class="logo-dark" />
-        </a>
-
-        <p class="footer-text">
-          Learn about Web accessibility, Web performance, and Database
-          management.
-        </p>
-      </div>
-
-      <div class="wrapper">
-        <p class="footer-title">Quick Links</p>
-
-        <ul>
-          <li>
-            <a href="https://www.linkedin.com/in/chhavi-sharma-8b7b3a24b/" class="footer-link"
-              target="_blank">LinkdIn</a>
-          </li>
-
-          <li>
-            <a href="https://github.com/chhavi7104" target="_blank" class="footer-link">GitHub</a>
-          </li>
-          <li>
-            <a href="chhavi7104@gmail.com" target="_blank" class="footer-link">G-mail</a> 
-          </li>
-        </ul>
-      </div>
-
-      <div class="wrapper">
-        <p class="footer-title">Contact Info</p>
-
-        <ul>
-          <li>
-            <a href="+91-8950456601" class="footer-link">contact no.</a>
-          </li>
-
-    </div>
-
-    <p class="copyright">
-      &copy; Copyright 2023
-      <a href="https://www.linkedin.com/in/chhavi-sharma-8b7b3a24b/" target="_blank">Code_Stark</a>
-    </p>
-  </footer>
-
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
-
-</html>
+<!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chhavi | Java &amp; Full-Stack Developer</title>
+<meta name="description" content="Chhavi: Java/Spring Boot and full-stack developer (B.Tech CSE, VIT Bhopal). Projects, experience and coding stats.">
+<meta property="og:title" content="Chhavi | Java & Full-Stack Developer"><meta property="og:description" content="Spring Boot, Angular, React, FastAPI. Projects and coding stats.">
+<meta property="og:type" content="website"><meta name="twitter:card" content="summary">
+<link rel="icon" href="assets/images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&family=JetBrains+Mono&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#07060f;--fg:#e8e6ff;--mut:#9a97c0;--card:rgba(255,255,255,.05);--bd:rgba(160,140,255,.22);--p:#a855f7;--c:#22d3ee;--g:linear-gradient(120deg,var(--p),var(--c))}
+[data-theme=light]{--bg:#f5f3ff;--fg:#1b1636;--mut:#5b567e;--card:rgba(255,255,255,.7);--bd:rgba(100,80,200,.25)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 Inter,system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:'Space Grotesk',sans-serif;line-height:1.15;margin:0 0 .5em}
+a{color:var(--c)}canvas#bg{position:fixed;inset:0;z-index:-1;width:100%;height:100%}
+.skip{position:absolute;left:-999px}.skip:focus{left:8px;top:8px;background:#000;color:#fff;padding:8px;z-index:99}
+:focus-visible{outline:2px solid var(--c);outline-offset:3px}
+header{position:sticky;top:0;z-index:20;backdrop-filter:blur(14px);background:color-mix(in srgb,var(--bg) 70%,transparent);border-bottom:1px solid var(--bd)}
+nav{max-width:1100px;margin:auto;padding:12px 20px;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+nav .logo{font:700 1.2rem 'Space Grotesk';background:var(--g);-webkit-background-clip:text;color:transparent;text-decoration:none;margin-right:auto}
+nav a.l{color:var(--fg);text-decoration:none;font-size:.92rem}nav a.l:hover{color:var(--c)}
+#menu{display:none}@media(max-width:760px){#menu{display:block}nav .links{display:none;width:100%;flex-direction:column}nav .links.open{display:flex}}
+.links{display:flex;gap:18px}
+section{max-width:1100px;margin:auto;padding:80px 20px}
+.btn{display:inline-block;border:1px solid var(--bd);background:var(--card);color:var(--fg);padding:10px 18px;border-radius:999px;cursor:pointer;font:500 .95rem Inter;text-decoration:none;transition:.25s}
+.btn:hover{box-shadow:0 0 22px rgba(168,85,247,.55);transform:translateY(-2px)}.btn.pri{background:var(--g);color:#fff;border:0}
+.glass{background:var(--card);border:1px solid var(--bd);border-radius:18px;padding:20px;backdrop-filter:blur(12px);transition:.3s;transform-style:preserve-3d}
+.glass:hover{box-shadow:0 0 28px rgba(34,211,238,.25);border-color:var(--c)}
+.grad{background:var(--g);-webkit-background-clip:text;color:transparent}
+#hero{min-height:88vh;display:flex;flex-direction:column;justify-content:center}
+#hero h1{font-size:clamp(2.4rem,7vw,4.6rem)}.row{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+.tag{font:.78rem 'JetBrains Mono',monospace;border:1px solid var(--bd);border-radius:999px;padding:2px 10px;color:var(--c);display:inline-block;margin:2px}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+.stat b{display:block;font:700 2rem 'Space Grotesk'}
+.tl{border-left:2px solid var(--p);padding-left:20px;display:grid;gap:18px}
+input,textarea,select{width:100%;background:var(--card);color:var(--fg);border:1px solid var(--bd);border-radius:12px;padding:11px;font:inherit}
+label{display:block;margin:12px 0 4px;font-size:.9rem}.err{color:#fb7185;font-size:.82rem;min-height:1em}
+#term{background:#05040b;color:#d7ffe9;font:.9rem 'JetBrains Mono',monospace;border-radius:14px;border:1px solid var(--bd);padding:14px;height:280px;overflow:auto}
+#term input{background:none;border:0;padding:0;color:#d7ffe9;width:70%;font:inherit;outline:0}
+.reveal{opacity:0;transform:translateY(24px);transition:.7s}.reveal.in{opacity:1;transform:none}
+dialog{background:var(--bg);color:var(--fg);border:1px solid var(--c);border-radius:18px;max-width:560px;width:92%}dialog::backdrop{background:rgba(0,0,0,.7)}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto}.reveal{opacity:1;transform:none}}
+</style></head><body>
+<a class="skip" href="#main">Skip to content</a><canvas id="bg" aria-hidden="true"></canvas>
+<header><nav aria-label="Main"><a class="logo" href="#hero">chhavi.dev</a>
+<button class="btn" id="menu" aria-expanded="false" aria-controls="links">Menu</button>
+<div class="links" id="links"><a class="l" href="#about">About</a><a class="l" href="#skills">Skills</a><a class="l" href="#experience">Experience</a><a class="l" href="#projects">Projects</a><a class="l" href="#stats">Stats</a><a class="l" href="#terminal">Terminal</a><a class="l" href="#contact">Contact</a></div>
+<button class="btn" id="theme" aria-label="Toggle light or dark theme">◐</button></nav></header>
+<main id="main">
+<section id="hero"><p class="tag">Gurugram, Haryana</p><h1>Hi, I'm <span class="grad">Chhavi</span>.<br>Java &amp; Full-Stack Developer.</h1>
+<p style="max-width:640px;color:var(--mut)" id="typed"></p>
+<div class="row"><a class="btn pri" href="assets/Chhavi_Resume.pdf" download>Download Resume</a><a class="btn" href="#projects">View Projects</a>
+<a class="btn" href="https://github.com/chhavi7104" target="_blank" rel="noopener">GitHub</a><a class="btn" href="https://www.linkedin.com/in/chhavi-sharma-8b7b3a24b/" target="_blank" rel="noopener">LinkedIn</a><a class="btn" href="https://leetcode.com/u/chhavi7104" target="_blank" rel="noopener">LeetCode</a></div></section>
+<section id="about" class="reveal"><h2>About</h2><div class="glass"><p>Java Developer with a B.Tech in Computer Science &amp; Engineering (VIT Bhopal, CGPA 8.64, 2022–2026). Hands-on with Java, Spring Boot, REST APIs, SQL and backend development; builds with Spring Boot, MySQL, Angular and Docker, with strong OOP and software-design fundamentals. Also works in Python, React, MongoDB and AI/ML, with strong problem-solving and DSA skills.</p></div></section>
+<section id="skills" class="reveal"><h2>Skills</h2><div class="row" id="skillTabs" role="tablist"></div><div class="grid" id="skillGrid" style="margin-top:16px"></div></section>
+<section id="experience" class="reveal"><h2>Experience &amp; Education</h2><div class="tl" id="tl"></div></section>
+<section id="projects" class="reveal"><h2>Projects</h2>
+<div class="row"><input id="q" type="search" placeholder="Search projects…" aria-label="Search projects" style="max-width:320px"><div class="row" id="techF" style="margin:0"></div></div>
+<div class="grid" id="pGrid" style="margin-top:16px" aria-live="polite"></div>
+<h3 style="margin-top:36px">Recent GitHub activity</h3><div class="glass" id="act" aria-live="polite">Loading…</div></section>
+<section id="stats" class="reveal"><h2>Achievements &amp; Coding Stats</h2><div class="grid" id="statGrid"></div></section>
+<section id="terminal" class="reveal"><h2>Terminal</h2><div id="term" role="log" aria-live="polite"><div id="out"></div><span>$ </span><input id="cmd" aria-label="Terminal command" autocomplete="off" spellcheck="false"></div></section>
+<section id="contact" class="reveal"><h2>Contact</h2><form id="form" class="glass" novalidate style="max-width:560px">
+<label for="n">Name</label><input id="n" name="name" required maxlength="80"><div class="err" id="en"></div>
+<label for="e">Email</label><input id="e" name="email" type="email" required maxlength="120"><div class="err" id="ee"></div>
+<label for="m">Message</label><textarea id="m" name="message" rows="5" required minlength="10" maxlength="2000"></textarea><div class="err" id="em"></div>
+<input name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-999px">
+<button class="btn pri" id="send" style="margin-top:12px">Send message</button><p id="fs" role="status"></p></form>
+<p style="color:var(--mut)">Or email <a href="mailto:chhavi7104@gmail.com">chhavi7104@gmail.com</a></p></section>
+</main>
+<dialog id="dlg"><h3 id="dt"></h3><p id="dd"></p><div id="dm"></div><div class="row" id="dl"></div><div class="row"><button class="btn" id="dx">Close</button></div></dialog>
+<script>
+const CFG={gh:'chhavi7104',api:'',gfg:''}; // api: contact backend URL; gfg: GeeksforGeeks username (hidden until set)
+const $=s=>document.querySelector(s),el=(t,c,x)=>{const e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e};
+const SK={Languages:['Java','JavaScript','SQL','C++','C','HTML','CSS','Python'],Frameworks:['Spring Boot','Spring MVC','Spring Data JPA','Hibernate','React.js','Angular','Express.js','Node.js','FastAPI'],'Backend & API':['REST APIs','Microservices','JDBC','Maven','JSON'],Databases:['MySQL','MongoDB','PostgreSQL','SQLite'],'Dev Tools':['Git','GitHub','Docker','GitHub Actions','Postman','VS Code']};
+const EXP=[['Aug 2026 – Sep 2026','Python Developer Intern · Algoryx Technologies (Remote)','Built Python backend, data-processing and automation features with FastAPI, REST APIs, web crawling and data extraction; debugged and optimised code.'],
+['Dec 2024 – Jan 2025','Space Technology Intern · Indian Space Lab (Remote)','Research, technical analysis and implementation on a space-technology project using Python for data analysis.'],
+['Sept 2022 – Apr 2026','B.Tech CSE · Vellore Institute of Technology, Bhopal','CGPA 8.64.']];
+const PROJ=[{name:'Smart Banking System',d:'Full-stack banking app with Spring Security + JWT authentication, REST APIs for core banking operations, and an Angular frontend.',t:['Java','Spring Boot','Angular','MySQL','JWT']},
+{name:'College Selection Platform',d:'Full-stack platform to browse and select colleges. Dockerized, with CI/CD via GitHub Actions.',t:['React','Node.js','Express','MongoDB','Docker']},
+{name:'VocalCart',d:'Voice-enabled e-commerce platform: product search, cart and checkout. FastAPI + SQLAlchemy APIs, Pydantic validation, pytest tests.',t:['Python','FastAPI','SQLite']}];
+const ACH=[['5★','HackerRank Python'],['1,438','LeetCode rating'],['1,050+','LeetCode problems solved'],['SIH','Smart India Hackathon: AI chatbot for Ministry of Jal Shakti; college-level final round']];
+if(CFG.gfg)ACH.push(['GFG','GeeksforGeeks: '+CFG.gfg]);
+// typed intro
+const intro='Spring Boot · Angular · React · FastAPI · MySQL · Docker. Building secure, scalable backends and clean UIs.';let i=0;const ty=$('#typed');
+if(matchMedia('(prefers-reduced-motion:reduce)').matches)ty.textContent=intro;else(function f(){ty.textContent=intro.slice(0,++i);if(i<intro.length)setTimeout(f,28)})();
+// skills
+const tabs=$('#skillTabs'),sg=$('#skillGrid');
+function showSk(k){sg.replaceChildren(...SK[k].map(s=>el('div','glass',s)));[...tabs.children].forEach(b=>b.setAttribute('aria-selected',b.textContent===k))}
+Object.keys(SK).forEach(k=>{const b=el('button','btn',k);b.role='tab';b.onclick=()=>showSk(k);tabs.append(b)});showSk('Languages');
+// timeline
+$('#tl').append(...EXP.map(([d,t,x])=>{const g=el('div','glass');g.append(el('span','tag',d),el('h3',0,t),el('p',0,x));return g}));
+// stats
+$('#statGrid').append(...ACH.map(([a,b])=>{const g=el('div','glass stat');g.append(el('b','grad',a),el('span',0,b));return g}));
+// projects
+let ALL=PROJ.map(p=>({...p,feat:1})),flt='All';
+const pg=$('#pGrid'),dlg=$('#dlg');
+function open(p){$('#dt').textContent=p.name;$('#dd').textContent=p.d;$('#dm').replaceChildren(...p.t.map(x=>el('span','tag',x)));
+ const l=$('#dl');l.replaceChildren();if(p.url){const a=el('a','btn pri','GitHub');a.href=p.url;a.target='_blank';a.rel='noopener';l.append(a)}
+ if(p.home){const a=el('a','btn','Live demo');a.href=p.home;a.target='_blank';a.rel='noopener';l.append(a)}dlg.showModal()}
+$('#dx').onclick=()=>dlg.close();
+function draw(){const q=$('#q').value.toLowerCase();
+ const r=ALL.filter(p=>(flt=='All'||p.t.includes(flt))&&(p.name+p.d+p.t.join(' ')).toLowerCase().includes(q));
+ pg.replaceChildren(...(r.length?r.map(p=>{const g=el('article','glass');g.append(el('h3',0,p.name),el('p',0,p.d.slice(0,120)+(p.d.length>120?'…':'')),...p.t.slice(0,4).map(x=>el('span','tag',x)));
+  const b=el('button','btn','Details');b.style.marginTop='10px';b.onclick=()=>open(p);g.append(el('br'),b);return g}):[el('p',0,'No projects match your search.')]))}
+function filters(){const ts=['All',...new Set(ALL.flatMap(p=>p.t))].slice(0,14);$('#techF').replaceChildren(...ts.map(t=>{const b=el('button','btn',t);b.onclick=()=>{flt=t;draw()};return b}))}
+$('#q').oninput=draw;filters();draw();
+pg.after(Object.assign(el('p'),{id:'pst',textContent:'Loading repositories from GitHub…'}));
+fetch(`https://api.github.com/users/${CFG.gh}/repos?per_page=100&sort=updated`).then(r=>{if(!r.ok)throw 0;return r.json()}).then(rs=>{
+ rs.filter(r=>!r.fork).forEach(r=>ALL.push({name:r.name,d:r.description||'No description provided.',t:[r.language,...(r.topics||[])].filter(Boolean),url:r.html_url,home:r.homepage||''}));
+ $('#pst').textContent=`Showing ${ALL.length} projects (resume highlights + live GitHub repos).`;filters();draw()}).catch(()=>{$('#pst').textContent='Could not load GitHub repos right now (rate limit or network). Showing resume projects; see github.com/'+CFG.gh+'.'});
+fetch(`https://api.github.com/users/${CFG.gh}/events/public?per_page=30`).then(r=>{if(!r.ok)throw 0;return r.json()}).then(ev=>{
+ const a=$('#act');a.replaceChildren();const L=ev.filter(e=>e.type=='PushEvent').slice(0,5);
+ if(!L.length)return a.textContent='No recent public push activity.';
+ L.forEach(e=>a.append(el('div',0,`${new Date(e.created_at).toLocaleDateString()} · ${e.payload.commits?.length||0} commit(s) → ${e.repo.name}`)))}).catch(()=>$('#act').textContent='Activity unavailable right now.');
+// terminal
+const out=$('#out'),C={help:()=>'Commands: help, about, skills, projects, contact, clear',about:()=>$('#about p,.glass p').textContent.slice(0,0)||'Chhavi: Java & full-stack developer, B.Tech CSE (VIT Bhopal). Spring Boot, Angular, React, FastAPI.',
+skills:()=>Object.entries(SK).map(([k,v])=>k+': '+v.join(', ')).join('\n'),projects:()=>ALL.map(p=>'• '+p.name).join('\n'),contact:()=>'Email: chhavi7104@gmail.com\nGitHub: github.com/chhavi7104\nLinkedIn: linkedin.com/in/chhavi-sharma-8b7b3a24b'};
+$('#cmd').addEventListener('keydown',e=>{if(e.key!='Enter')return;const v=e.target.value.trim().toLowerCase();e.target.value='';
+ if(v=='clear')return out.replaceChildren();const d=el('div');d.style.whiteSpace='pre-wrap';d.textContent='$ '+v+'\n'+(C[v]?C[v]():v?`command not found: ${v} (try help)`:'');out.append(d);$('#term').scrollTop=1e5});
+C.help();out.textContent='Type "help" and press Enter.';
+// contact
+$('#form').addEventListener('submit',async e=>{e.preventDefault();const f=e.target,d=Object.fromEntries(new FormData(f));let ok=1;
+ const chk=(id,er,c,m)=>{$(er).textContent=c?'':m;if(!c)ok=0};
+ chk('#n','#en',d.name.trim().length>1,'Enter your name.');chk('#e','#ee',/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(d.email),'Enter a valid email.');chk('#m','#em',d.message.trim().length>=10,'Message must be at least 10 characters.');
+ if(!ok)return;const s=$('#fs'),b=$('#send');b.disabled=true;s.textContent='Sending…';
+ try{const r=await fetch(CFG.api+'/api/contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)});const j=await r.json().catch(()=>({}));
+  if(!r.ok)throw new Error(j.error||'Server error');s.textContent='Thanks! Your message was sent.';f.reset()}catch(x){s.textContent='Could not send: '+x.message+'. Please email me directly.'}b.disabled=false});
+// ui
+$('#theme').onclick=()=>{const h=document.documentElement;h.dataset.theme=h.dataset.theme=='dark'?'light':'dark';try{localStorage.t=h.dataset.theme}catch{}};
+try{if(localStorage.t)document.documentElement.dataset.theme=localStorage.t}catch{}
+$('#menu').onclick=e=>{const o=$('#links').classList.toggle('open');e.target.setAttribute('aria-expanded',o)};
+document.querySelectorAll('#links a').forEach(a=>a.onclick=()=>$('#links').classList.remove('open'));
+const io=new IntersectionObserver(es=>es.forEach(x=>x.isIntersecting&&x.target.classList.add('in')),{threshold:.1});document.querySelectorAll('.reveal').forEach(x=>io.observe(x));
+document.addEventListener('pointermove',e=>{const g=e.target.closest?.('.glass');if(!g||matchMedia('(prefers-reduced-motion:reduce)').matches||g.tagName=='FORM')return;const r=g.getBoundingClientRect();g.style.transform=`perspective(700px) rotateX(${((e.clientY-r.top)/r.height-.5)*-8}deg) rotateY(${((e.clientX-r.left)/r.width-.5)*8}deg)`});
+document.addEventListener('pointerout',e=>{const g=e.target.closest?.('.glass');if(g)g.style.transform=''});
+// particle background
+(()=>{const c=$('#bg'),x=c.getContext('2d');if(matchMedia('(prefers-reduced-motion:reduce)').matches)return;let w,h,P=[];
+ const rs=()=>{w=c.width=innerWidth;h=c.height=innerHeight;P=Array.from({length:Math.min(70,w/18|0)},()=>({x:Math.random()*w,y:Math.random()*h,vx:Math.random()-.5,vy:Math.random()-.5}))};rs();addEventListener('resize',rs);
+ (function f(){x.clearRect(0,0,w,h);P.forEach((p,i)=>{p.x=(p.x+p.vx+w)%w;p.y=(p.y+p.vy+h)%h;x.fillStyle='rgba(168,85,247,.8)';x.fillRect(p.x,p.y,2,2);
+  for(let j=i+1;j<P.length;j++){const d=Math.hypot(p.x-P[j].x,p.y-P[j].y);if(d<120){x.strokeStyle=`rgba(34,211,238,${.18*(1-d/120)})`;x.beginPath();x.moveTo(p.x,p.y);x.lineTo(P[j].x,P[j].y);x.stroke()}}});requestAnimationFrame(f)})()})();
+</script></body></html>
